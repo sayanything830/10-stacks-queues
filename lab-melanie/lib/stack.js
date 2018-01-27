@@ -2,7 +2,7 @@
 
 const Node = require('./node.js');
 
-class Stack {
+module.exports = class {
   constructor(maxSize=1048) {
     this.top = null;
     this.maxSize = maxSize;
@@ -10,14 +10,13 @@ class Stack {
   }
 
   push(value) {
-    if(this.size === this.maxsize) throw new Error('Stack Overflow');
+    if(this.size === this.maxSize) throw new Error('Stack Overflow');
 
     let node = new Node(value);
 
     node.next = this.top;
     this.top = node;
     this.size ++;
-    this.value = value;
     return this.top;
   }
 
@@ -35,5 +34,3 @@ class Stack {
     return this.top;
   }
 }
-
-module.exports = Stack;
