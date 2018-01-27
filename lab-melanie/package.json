@@ -1,0 +1,19 @@
+{
+  "name": "lab-melanie",
+  "version": "1.0.0",
+  "description": "10-stacks-queues",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "lint": "eslint ."
+  },
+  "author": "melanie",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  }
+}
