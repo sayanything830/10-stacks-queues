@@ -37,7 +37,7 @@ describe('Stack Module', function () {
   });
   describe('#Pop', () => {
     it('should remove the top most node from the stack', () => {
-      this.stack.push(1)
+      this.stack.push(1);
       expect(this.stack.top.value).toEqual(1);
       expect(this.stack.pop().value).toEqual(1);
     });

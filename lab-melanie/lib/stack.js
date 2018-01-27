@@ -33,4 +33,4 @@ module.exports = class {
     if(!this.top) throw new Error('Stack is empty');
     return this.top;
   }
-}
+};
