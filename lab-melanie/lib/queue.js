@@ -16,11 +16,13 @@ class Queue {
 
     if(!this.front) {
       this.front = node;
+      this.size ++;
       return this;
     }
 
     for(var itr = this.front; itr.next; itr = itr.next);
     itr.next = node;
+    this.size ++;
     return this;
   }
 
@@ -28,6 +30,8 @@ class Queue {
     if(!this.front) throw Error('This queue is empty');
 
     this.front = this.front.next;
+    this.size --;
+    return this;
   }
 }
 

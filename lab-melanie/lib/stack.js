@@ -17,10 +17,12 @@ class Stack {
     node.next = this.top;
     this.top = node;
     this.size ++;
+    this.value = value;
     return this.top;
   }
 
   pop() {
+    if(!this.top) throw new Error('Stack is empty');
     let temp = this.top;
     this.top = temp.next;
     temp.next = null;
@@ -29,6 +31,7 @@ class Stack {
   }
 
   peek() {
+    if(!this.top) throw new Error('Stack is empty');
     return this.top;
   }
 }
