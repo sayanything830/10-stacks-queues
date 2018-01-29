@@ -14,24 +14,29 @@ Returns in console:
 
 ```
 This is the stack module example:
-adding first node  { value: 1, next: null }
-adding second node  { value: 30, next: { value: 1, next: null } }
-adding thrid node  { value: 4,
+adding first node:  { value: 1, next: null }
+adding second node:  { value: 30, next: { value: 1, next: null } }
+adding third node:  { value: 4,
   next: { value: 30, next: { value: 1, next: null } } }
-current stack size  3
+current stack size:  3
 top node value:  4
-removing top node  { value: 4, next: null }
-peek at new top node  { value: 30, next: { value: 1, next: null } }
+removing top node:  { value: 4, next: null }
+peek at new top node:  { value: 30, next: { value: 1, next: null } }
 new stack size:  2
 top node value:  30
 *************
 This is the queue example:
-adding first node: Queue { front: { value: 75, next: null }, maxSize: 1048, size: 1 }
+adding first node: Queue {
+  front: { value: 75, next: null },
+  back: { value: 75, next: null },
+  maxSize: 1048,
+  size: 1 }
 adding second node:  Queue {
   front: { value: 75, next: { value: 100, next: null } },
+  back: { value: 100, next: null },
   maxSize: 1048,
   size: 2 }
-removing first node:  Queue { front: { value: 100, next: null }, maxSize: 1048, size: 1 }
+removing first node:  { value: 75, next: null }
 size of queue:  1
 ```
 
